@@ -1,0 +1,26 @@
+---
+title: "R Version Control First Notebook"
+output: html_notebook
+---
+
+# Shortcuts
+```{r}
+# Ctrl+Alt+I for new chunk
+# Ctrl+Shift+Enter to run chunk
+# Ctrl+Shift+K to preview the HTML file
+```
+
+#Import Library and Datasets
+```{r}
+library(tidyverse)
+library(dslabs)
+
+data("iris")
+head(iris)
+```
+
+# Plot
+```{r}
+iris %>% ggplot(aes(x = Sepal.Length, y = Sepal.Width, col = Species)) + geom_point()
+```
+
